@@ -16,35 +16,47 @@ html{
 h1{
     text-align: center;
     font-size: 3.5rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 a{
     text-decoration: none;
     font-weight: 700;
     color: #000;
-    border: 2px solid black
+    /*border: 2px solid black*/
 }
 header{
     background: rgb(59,65,201);
     background: radial-gradient(circle, rgba(59,65,201,1) 0%, rgba(132,134,207,1) 100%);
     max-width: 100%;
 }
-input{
+/*input{
     border: 2.5px solid #B3B6B7;
     width: 35%;
     border-radius: .5rem;
     margin-left: 4rem;
-    
-}
+}*/
 
 /* selectores de clase y identificador */
 #login{
     margin-bottom: 1rem;
+    margin-right: 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
 }
-#boton{
+@media (min-width: 768px) {
+    #login{
+        margin-right: 5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+.sesion{
+    margin-left: 2rem;
+}
+/*#boton{
     display: inline-block;
     vertical-align: top;
     background: transparent;
@@ -66,19 +78,24 @@ input{
     border-radius: .5rem;
     background-color: #000;
     padding: 0.5rem 2rem 0.2rem;
-    /*margin-right: 35rem;*/
+    margin-right: 35rem;
     position: relative;
     top: 5px;
     left: -80px;
-}
+}*/
 
 #navegacion{
-    border: 2px solid orange;
-    margin: 0 auto;
+    font-size: 20px;
+    background: rgb(117, 117, 212);
+    /*border: 2px solid orange;*/
+    padding: 0.5rem;
 }
 .search-nav{
+    margin: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-width: 556px) {
     .search-nav{
