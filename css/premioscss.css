@@ -14,16 +14,10 @@ html{
     box-sizing: border-box;
 }
 h1{
+    text-align: center;
     font-size: 3.5rem;
-    display: flex;
-    justify-content: center;
+    padding: 1rem 0;
 }
-@media (min-width: 768px) {
-    h1{
-        text-align: center;
-    }
-}
-h1 a{margin: 1rem;}
 a{
     text-decoration: none;
     font-weight: 700;
@@ -45,7 +39,7 @@ header{
 }
 @media (min-width: 768px) {
     #login{
-        margin-right: 1rem;
+        margin-right: 5rem;
         margin-bottom: 2rem;
         display: flex;
         flex-direction: row;
@@ -53,34 +47,20 @@ header{
     }
 }
 .sesion{
-    font-size: 2rem;
-    margin: 0.3rem 3rem;
-}
-.sesion:hover{
-    border-radius: 5px;
-    padding: 0px 4px;
-    color: white;
+    margin-left: 2rem;
 }
 
 #navegacion{
     font-size: 20px;
-    background: rgb(162, 162, 240);
+    background: rgb(117, 117, 212);
     padding: 0.5rem;
 }
 .search-nav{
-    margin: 1rem 0;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.item{
-    margin: 5px 0;
-    font-size: 2rem;
-}
-.item:hover{
-    border-radius: 5px;
-    color: white;
 }
 @media (min-width: 556px) {
     .search-nav{
@@ -94,4 +74,78 @@ header{
     -webkit-box-shadow: 0px 4px 8px 1px rgba(133,137,214,1);
     -moz-box-shadow: 0px 4px 8px 1px rgba(133,137,214,1);
     box-shadow: 0px 4px 8px 1px rgba(133,137,214,1);
+}
+
+h2{
+    text-align: center;
+    margin: 2rem;
+    padding-top: 2rem;
+    text-decoration:underline;
+    font-size: 50px;
+}
+
+
+
+ #Section1 
+{
+    padding: 0.5rem;
+   margin: 1rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+ #Section1 section
+{
+   
+    text-align: center;
+    margin: 2rem;
+    padding: 3rem;
+    width: 55rem;
+    height: 120rem;
+    overflow:auto;
+    border-right: 1rem dotted black;
+    border-left: 1rem dotted black;;
+    
+}
+
+#Section1 section img{
+    width: 40rem;
+    height: 30rem;
+    
+    padding: 1rem;
+}
+#Section1 section #img1
+{
+    width: 180px;
+    height: 200px;
+    background-color: red;
+    border: 1px solid red;
+    position: relative;
+    display: inline;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    margin: 5px;
+}
+#Section1 section h4{
+    font-size: 3rem;
+   margin: 2rem;
+}
+#Section1 section ul li{
+    list-style: none;
+    justify-content: left;
+    text-align: left;
+    flex-wrap: wrap;
+     padding: 5px;
+     top: -6rem;
+     font-size: 2rem;
+  }
+  
+  h3{
+    
+    text-align: center;
+    margin-top: 15px;
+    text-decoration:underline;
+    font-size: 30px;
+    padding-bottom: 1rem;
 }
