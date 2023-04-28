@@ -14,10 +14,16 @@ html{
     box-sizing: border-box;
 }
 h1{
-    text-align: center;
     font-size: 3.5rem;
-    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
 }
+@media (min-width: 768px) {
+    h1{
+        text-align: center;
+    }
+}
+h1 a{margin: 1rem;}
 a{
     text-decoration: none;
     font-weight: 700;
@@ -39,7 +45,7 @@ header{
 }
 @media (min-width: 768px) {
     #login{
-        margin-right: 5rem;
+        margin-right: 1rem;
         margin-bottom: 2rem;
         display: flex;
         flex-direction: row;
@@ -47,20 +53,34 @@ header{
     }
 }
 .sesion{
-    margin-left: 2rem;
+    font-size: 2rem;
+    margin: 0.3rem 3rem;
+}
+.sesion:hover{
+    border-radius: 5px;
+    padding: 0px 4px;
+    color: white;
 }
 
 #navegacion{
-    font-size: 20px;
-    background: rgb(117, 117, 212);
+    font-size: 50px;
+    background: rgb(162, 162, 240);
     padding: 0.5rem;
 }
 .search-nav{
-    margin: 1rem;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.item{
+    margin: 5px 0;
+    font-size: 3rem;
+}
+.item:hover{
+    border-radius: 5px;
+    color: white;
 }
 @media (min-width: 556px) {
     .search-nav{
@@ -70,8 +90,242 @@ header{
 }
 /*main */
 #shadow{
-    margin: .5rem 2rem;
+    margin: 0.5rem 2rem;
     -webkit-box-shadow: 0px 4px 8px 1px rgba(133,137,214,1);
     -moz-box-shadow: 0px 4px 8px 1px rgba(133,137,214,1);
     box-shadow: 0px 4px 8px 1px rgba(133,137,214,1);
 }
+h2{
+    text-align: center;
+    margin: 2rem;
+    padding-top: 2rem;
+    text-decoration:underline;
+    font-size: 50px;
+}
+
+
+.Acordion{
+    
+    padding: 3rem;
+    
+    
+    font-size: 24px;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+.Acordeon .UNO {
+    position: relative;
+    margin: 10px 10px;
+  }
+
+  #shadow .Acordeon .Acordion{
+    position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #DBDBDB;
+  width: 500px;
+  
+  
+
+
+    
+  
+  }
+  #shadow .UNO{
+    padding: 3rem;
+  
+   justify-content: center;
+   border-bottom: #DBDBDB solid 2rem ; flex-wrap: wrap;
+   
+   
+  }
+  #shadow .Contenido{
+    border-left: dotted  #DBDBDB  1rem;
+    top: -49rem;
+    left: 600px;
+    font-size: 2rem;
+    width: 87rem;
+    
+    flex-wrap: wrap;
+    
+
+  }
+.UNO h3{
+    
+    text-align: center;
+    margin-top: 15px;
+    text-decoration:underline;
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+ 
+  .Acordeon .Acordion::before{
+    content: '+';
+  color: red;
+  position: absolute;
+  bottom: -2rem;
+  left:23rem;
+  font-size: 60px;
+  transform: translateY(-50%);
+
+  }
+  .Acordeon .Contenido{
+    position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 60rem;
+  overflow: hidden;
+  transition: 0.5s;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  
+  }
+  
+  ul li{
+    list-style: none;
+    justify-content: left;
+    text-align: left;
+    flex-wrap: wrap;
+    
+   padding: 5px;
+   
+  
+  }
+  
+  .Acordeon .Acordion{
+    width: 100;
+    margin-left: 0;
+    
+  }
+  .Acordeon .UNO.active .Contenido{
+    height: 120px;
+    overflow: visible;
+    border-bottom:none;
+    width: 60rem;
+    
+  }
+
+  .Acordeon .UNO.active .Acordion::before{ 
+    
+    content: "-";
+    color: red;
+    font-size: 60px;
+    position: absolute;
+    bottom: -3rem;
+    left:23rem;
+    font-size: 70px;
+    transform: translateY(-50%);
+    
+  }
+
+
+
+img{
+    width: 40rem;
+    height: 30rem;
+    margin: 5rem;
+    padding: 1rem;
+    
+}
+
+#img1{
+    width: 180px;
+    height: 200px;
+    background-color: red;
+    border: 1px solid red;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+
+}
+
+#img2{
+    
+    width: 180px;
+    height: 180px;
+    top: -30.5rem;
+    left: 24rem;
+    
+}
+#img3{
+   
+    width: 180px;
+    height: 180px;
+    top: -62rem;
+    left: 44rem;
+    flex-wrap: wrap;
+}
+
+h4{
+    font-size: 5rem;
+}
+@media (max-width: 1000px) {
+    .Acordeon{
+        text-align: center;
+    }
+}
+@media (max-width: 1000px) {
+    .UNO{
+        text-align: center;
+       overflow: auto;
+    }
+}
+@media (max-width: 556px) {
+    .Acordeon .Contenido .Acordion{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 556px) {
+    .UNO{
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+}
+@media (max-width: 556px) {
+    #shadow .UNO{
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow:hidden;
+        flex-wrap: wrap;
+        height: 50rem;
+        
+    }
+}
+@media (max-width: 556px) {
+    #shadow .Contenido{
+        position: relative;
+        top: 1rem;
+        left: -2rem;
+        font-size: 3rem;
+       justify-content: center;
+       text-align: center;
+       
+      }
+}
+@media (max-width: 1000px) {
+    #shadow .Contenido {
+        position: relative;
+        top: 1rem;
+        left: -2rem;
+        font-size: 3rem;
+        justify-content: center;
+        text-align: center;
+      
+        
+      }
+}
+
