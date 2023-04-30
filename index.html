@@ -433,8 +433,50 @@
     
         </div>
                 
-                          
-                
+     
+         <!-- formulario de contacto --> 
+         <section id="contacto">
+            <h2>Contactanos</h2>
+            <form action="index.html" name="Form">
+
+                <div class=" ">
+    
+                    <div class="item">
+                        <label for="nombre">Nombre</label>
+                        <span class="sinCompletar" id="pNombre" style="display: none">Complete con su nombre</span>
+                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" onblur="validarNombre()">
+                        
+                    </div>
+    
+                    <div class="item">
+                        <label for="telefono">Teléfono</label>
+                        <span class="sinCompletar" id="pTelefono" style="display: none">Complete con su número de teléfono</span>
+                        <input id="telefono" name="telefono" type="number" placeholder="Teléfono" onblur="validarTelefono()">
+                    </div>
+    
+                    <div class="item">
+                        <label for="email">Correo electrónico</label>
+                        <span class="sinCompletar" id="pEmail" style="display: none">Complete con su dirección de correo electrónico</span>
+                        <span class="sinCompletar" id="pEmailInvalido" style="display: none">Email inválido</span>
+                        <input id="email" name="email" type="email" placeholder="Dirección de correo"
+                        onblur="validarEmail()">
+                    </div>
+    
+                    <div class="item">
+                        <label for="mensaje">Dejanos tu mensaje</label>
+                        <span class="sinCompletar" id="pMensaje" style="display: none">Complete con su mensaje</span>
+                        <textarea name="mensaje" id="mensaje" cols="20" rows="5" onblur="validarMensaje()"></textarea>
+                    </div>
+                    <div id="botones">
+                        <button type="button" onclick="validarContacto()">Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </div>
+                </div>
+                <link rel="stylesheet" href="css/contactocss.css">
+                <script src="js/contacto.js"></script>
+            </form>
+         </section>               
+          <!-- Fin formulario de contacto -->        
     
 
 
