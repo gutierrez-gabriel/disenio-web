@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel=stylesheet href="./css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    
+    </head>
+    <body>
+        <header class="header">
+            <section class="logo">
+                <img src="./img/logo.png" alt="Movie Review">
+            </section>
+    
+            <nav>
+                <ul class="search-nav">
+                    <li><a href="index.html">Peliculas del mes</a></li>
+                    <li><a href="criticas.html">Criticas</a></li>
+                    <li><a href="premios.html">Noticias</a></li>
+                </ul>
+            </nav>
+            <a href="#contacto" class="btn"><button>contacto</button></a>
+    
+        </header>
+             
+        <main>
+            <!-- formulario de contacto --> 
+            <section id="contacto">
+                <h2>Contactanos</h2>
+                <form action="index.html" name="Form">
+    
+                    <div class=" ">
+        
+                        <div class="item">
+                            <label for="nombre">Nombre</label>
+                            <span class="sinCompletar" id="pNombre" style="display: none">Complete con su nombre</span>
+                            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" onblur="validarNombre()">
+                            
+                        </div>
+        
+                        <div class="item">
+                            <label for="telefono">Teléfono</label>
+                            <span class="sinCompletar" id="pTelefono" style="display: none">Complete con su número de teléfono</span>
+                            <input id="telefono" name="telefono" type="number" placeholder="Teléfono" onblur="validarTelefono()">
+                        </div>
+        
+                        <div class="item">
+                            <label for="email">Correo electrónico</label>
+                            <span class="sinCompletar" id="pEmail" style="display: none">Complete con su dirección de correo electrónico</span>
+                            <span class="sinCompletar" id="pEmailInvalido" style="display: none">Email inválido</span>
+                            <input id="email" name="email" type="email" placeholder="Dirección de correo"
+                            onblur="validarEmail()">
+                        </div>
+        
+                        <div class="item">
+                            <label for="mensaje">Dejanos tu mensaje</label>
+                            <span class="sinCompletar" id="pMensaje" style="display: none">Complete con su mensaje</span>
+                            <textarea name="mensaje" id="mensaje" cols="20" rows="5" onblur="validarMensaje()"></textarea>
+                        </div>
+                        <div id="botones">
+                            <button id="btn-e" type="button" onclick="validarContacto()">Enviar</button>
+                            <button id="btn-b" type="reset">Borrar</button>
+                        </div>
+                    </div>
+                    <link rel="stylesheet" href="css/contactocss.css">
+                    <script src="js/contacto.js"></script>
+                </form>
+             </section>               
+            <!-- Fin formulario de contacto -->        
+        </main>
+           
+        
+    
+    
+        <footer>
+            <section class="grid container-footer">
+                <section class="item area1">
+                    <img class="logo-fu" src="./img/logo-foot.png" alt="Movie Review">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </section>
+        
+                <section class="item area2">
+                    <h3>Navegacion</h3>
+                    <ul>
+                        <li><a href="#">info@moviereview.com</a></li>
+                        <li><a href="#">+54 11 4877 90088</a></li>
+                        <li><a href="#">+54 11 15 89 67 53</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </section>
+        
+                <section class="item area3">
+                    <h3>Seguinos!</h3>
+                    <ul>
+                        <li><a href="#"><i class="fi-brands-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#"><i class="fi-brands-youtube"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="copyright">2023 Grupo CODO a CODO / Todos los derechos reservados</section>
+        </footer>
+        <script src="https://kit.fontawesome.com/3058924f53.js" crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
